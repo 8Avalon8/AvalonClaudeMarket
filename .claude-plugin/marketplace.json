@@ -1,0 +1,18 @@
+{
+  "name": "avalon-market",
+  "description": "Avalon 的 Claude Code 插件市场",
+  "owner": {
+    "name": "Avalon"
+  },
+  "plugins": [
+    {
+      "name": "feishu-card-builder",
+      "description": "根据需求正确构造飞书卡片的 schema 和 JSON 文件",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "Avalon"
+      }
+    }
+  ]
+}

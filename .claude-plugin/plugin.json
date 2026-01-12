@@ -1,0 +1,9 @@
+{
+  "name": "feishu-card-builder",
+  "version": "1.0.0",
+  "description": "根据需求正确构造飞书卡片的 schema 和 JSON 文件",
+  "author": {
+    "name": "Avalon"
+  },
+  "keywords": ["feishu", "lark", "card", "message-card", "飞书", "卡片"]
+}

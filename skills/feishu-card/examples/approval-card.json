@@ -1,0 +1,106 @@
+{
+  "config": {
+    "wide_screen_mode": true,
+    "enable_forward": true
+  },
+  "header": {
+    "title": {
+      "tag": "plain_text",
+      "content": "审批通知"
+    },
+    "template": "orange"
+  },
+  "elements": [
+    {
+      "tag": "div",
+      "fields": [
+        {
+          "is_short": true,
+          "text": {
+            "tag": "lark_md",
+            "content": "**申请人**\n张三"
+          }
+        },
+        {
+          "is_short": true,
+          "text": {
+            "tag": "lark_md",
+            "content": "**申请类型**\n请假申请"
+          }
+        },
+        {
+          "is_short": true,
+          "text": {
+            "tag": "lark_md",
+            "content": "**开始时间**\n2024-01-15"
+          }
+        },
+        {
+          "is_short": true,
+          "text": {
+            "tag": "lark_md",
+            "content": "**结束时间**\n2024-01-17"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "text": {
+        "tag": "lark_md",
+        "content": "**请假事由**\n因个人原因需要请假3天，请批准。"
+      }
+    },
+    {
+      "tag": "hr"
+    },
+    {
+      "tag": "action",
+      "actions": [
+        {
+          "tag": "button",
+          "text": {
+            "tag": "plain_text",
+            "content": "同意"
+          },
+          "type": "primary",
+          "value": {
+            "action": "approve",
+            "approval_id": "12345"
+          }
+        },
+        {
+          "tag": "button",
+          "text": {
+            "tag": "plain_text",
+            "content": "拒绝"
+          },
+          "type": "danger",
+          "value": {
+            "action": "reject",
+            "approval_id": "12345"
+          },
+          "confirm": {
+            "title": {
+              "tag": "plain_text",
+              "content": "确认拒绝"
+            },
+            "text": {
+              "tag": "plain_text",
+              "content": "确定要拒绝这个申请吗？"
+            }
+          }
+        },
+        {
+          "tag": "button",
+          "text": {
+            "tag": "plain_text",
+            "content": "查看详情"
+          },
+          "type": "default",
+          "url": "https://example.com/approval/12345"
+        }
+      ]
+    }
+  ]
+}

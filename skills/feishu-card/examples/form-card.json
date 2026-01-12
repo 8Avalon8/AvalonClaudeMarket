@@ -1,0 +1,123 @@
+{
+  "schema": "2.0",
+  "config": {
+    "wide_screen_mode": true
+  },
+  "header": {
+    "title": {
+      "tag": "plain_text",
+      "content": "用户反馈表单"
+    },
+    "template": "turquoise"
+  },
+  "body": {
+    "elements": [
+      {
+        "tag": "markdown",
+        "content": "请填写以下信息，我们会尽快处理您的反馈。"
+      },
+      {
+        "tag": "form",
+        "name": "feedback_form",
+        "elements": [
+          {
+            "tag": "div",
+            "text": {
+              "tag": "plain_text",
+              "content": "反馈类型"
+            }
+          },
+          {
+            "tag": "select_static",
+            "name": "feedback_type",
+            "placeholder": {
+              "tag": "plain_text",
+              "content": "请选择反馈类型"
+            },
+            "options": [
+              {
+                "text": {
+                  "tag": "plain_text",
+                  "content": "功能建议"
+                },
+                "value": "suggestion"
+              },
+              {
+                "text": {
+                  "tag": "plain_text",
+                  "content": "问题反馈"
+                },
+                "value": "bug"
+              },
+              {
+                "text": {
+                  "tag": "plain_text",
+                  "content": "其他"
+                },
+                "value": "other"
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "text": {
+              "tag": "plain_text",
+              "content": "详细描述"
+            }
+          },
+          {
+            "tag": "input",
+            "name": "description",
+            "placeholder": {
+              "tag": "plain_text",
+              "content": "请详细描述您的反馈内容"
+            },
+            "max_length": 500,
+            "rows": 4
+          },
+          {
+            "tag": "div",
+            "text": {
+              "tag": "plain_text",
+              "content": "联系邮箱（选填）"
+            }
+          },
+          {
+            "tag": "input",
+            "name": "email",
+            "placeholder": {
+              "tag": "plain_text",
+              "content": "请输入您的邮箱"
+            },
+            "max_length": 100
+          },
+          {
+            "tag": "action",
+            "actions": [
+              {
+                "tag": "button",
+                "text": {
+                  "tag": "plain_text",
+                  "content": "提交反馈"
+                },
+                "type": "primary",
+                "action_type": "form_submit",
+                "name": "submit_btn"
+              },
+              {
+                "tag": "button",
+                "text": {
+                  "tag": "plain_text",
+                  "content": "重置"
+                },
+                "type": "default",
+                "action_type": "form_reset",
+                "name": "reset_btn"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
