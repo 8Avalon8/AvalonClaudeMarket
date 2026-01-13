@@ -308,7 +308,7 @@ tag 可选值：
 |--------|---------|------|
 | column_set | 多列布局 | 并排展示多列内容 |
 | form | 表单容器 | 包装表单元素 |
-| interactive | 交互容器 | 整体可点击的容器 |
+| **interactive_container** | 交互容器 | 整体可点击的容器（**注意不是 interactive**） |
 | collapsible_panel | 折叠面板 | 可展开/收起 |
 
 ### 内容组件

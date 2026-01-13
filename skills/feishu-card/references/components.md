@@ -141,15 +141,17 @@
 | name | string | 是 | 表单名称，用于回调识别 |
 | elements | array | 是 | 表单元素数组 |
 
-### interactive - 交互容器
+### interactive_container - 交互容器
 
 > 文档：https://open.feishu.cn/document/feishu-cards/card-json-v2-components/containers/interactive-container
+>
+> **注意**：tag 值是 `interactive_container`，**不是** `interactive`！使用错误的 tag 会导致 API 报错。
 
 整体可点击的容器。
 
 ```json
 {
-  "tag": "interactive",
+  "tag": "interactive_container",
   "width": "fill",
   "height": "auto",
   "background_style": "default",
