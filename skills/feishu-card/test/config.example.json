@@ -1,0 +1,14 @@
+{
+  "_comment": "复制此文件为 config.json 并填入你的配置",
+
+  "_mode_options": "可选值: app | webhook",
+  "mode": "app",
+
+  "_app_credentials": "应用凭证方式（推荐，支持交互）",
+  "app_id": "cli_xxxxxxxxxx",
+  "app_secret": "xxxxxxxxxxxxxxxxxxxxxx",
+  "chat_id": "oc_xxxxxxxxxxxxxxxxxxxxxx",
+
+  "_webhook": "Webhook 方式（简单，仅单向发送）",
+  "webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx"
+}

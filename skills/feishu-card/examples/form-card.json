@@ -92,29 +92,24 @@
             "max_length": 100
           },
           {
-            "tag": "action",
-            "actions": [
-              {
-                "tag": "button",
-                "text": {
-                  "tag": "plain_text",
-                  "content": "提交反馈"
-                },
-                "type": "primary",
-                "action_type": "form_submit",
-                "name": "submit_btn"
-              },
-              {
-                "tag": "button",
-                "text": {
-                  "tag": "plain_text",
-                  "content": "重置"
-                },
-                "type": "default",
-                "action_type": "form_reset",
-                "name": "reset_btn"
-              }
-            ]
+            "tag": "button",
+            "text": {
+              "tag": "plain_text",
+              "content": "提交反馈"
+            },
+            "type": "primary",
+            "action_type": "form_submit",
+            "name": "submit_btn"
+          },
+          {
+            "tag": "button",
+            "text": {
+              "tag": "plain_text",
+              "content": "重置"
+            },
+            "type": "default",
+            "action_type": "form_reset",
+            "name": "reset_btn"
           }
         ]
       }

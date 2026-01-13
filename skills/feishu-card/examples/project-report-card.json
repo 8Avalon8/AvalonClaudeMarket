@@ -1,0 +1,462 @@
+{
+  "schema": "2.0",
+  "config": {
+    "wide_screen_mode": true,
+    "enable_forward": true,
+    "update_multi": true
+  },
+  "header": {
+    "title": {
+      "tag": "plain_text",
+      "content": "项目周报 - 智能客服系统 v2.0"
+    },
+    "subtitle": {
+      "tag": "plain_text",
+      "content": "2024年第3周 (01/15 - 01/21)"
+    },
+    "template": "blue"
+  },
+  "body": {
+    "elements": [
+      {
+        "tag": "column_set",
+        "flex_mode": "bisect",
+        "background_style": "grey",
+        "horizontal_spacing": "default",
+        "columns": [
+          {
+            "tag": "column",
+            "width": "weighted",
+            "weight": 1,
+            "vertical_align": "center",
+            "elements": [
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**项目负责人**\n张三"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "column",
+            "width": "weighted",
+            "weight": 1,
+            "vertical_align": "center",
+            "elements": [
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**项目状态**\n<font color='green'>正常推进</font>"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "markdown",
+        "content": "### 本周进度概览"
+      },
+      {
+        "tag": "column_set",
+        "flex_mode": "trisect",
+        "background_style": "default",
+        "columns": [
+          {
+            "tag": "column",
+            "width": "weighted",
+            "weight": 1,
+            "elements": [
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**整体进度**"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "<font color='blue'>**78%**</font>"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "较上周 +12%"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "column",
+            "width": "weighted",
+            "weight": 1,
+            "elements": [
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**已完成任务**"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "<font color='green'>**15/20**</font>"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "本周完成 8 项"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "column",
+            "width": "weighted",
+            "weight": 1,
+            "elements": [
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**待解决问题**"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "<font color='red'>**3**</font>"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "高优先级 1 项"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "collapsible_panel",
+        "expanded": true,
+        "header": {
+          "title": {
+            "tag": "plain_text",
+            "content": "本周完成任务"
+          },
+          "icon": {
+            "tag": "standard_icon",
+            "token": "check-outlined"
+          }
+        },
+        "elements": [
+          {
+            "tag": "markdown",
+            "content": "1. **用户意图识别模块** - 完成率 100%\n   - 接入 NLP 引擎，支持 50+ 意图分类\n   - 准确率达到 92%\n\n2. **多轮对话管理** - 完成率 100%\n   - 上下文记忆功能上线\n   - 支持 10 轮以上连续对话\n\n3. **知识库接口对接** - 完成率 100%\n   - 完成与内部知识库 API 集成\n   - 支持实时更新索引"
+          }
+        ]
+      },
+      {
+        "tag": "collapsible_panel",
+        "expanded": false,
+        "header": {
+          "title": {
+            "tag": "plain_text",
+            "content": "下周计划"
+          },
+          "icon": {
+            "tag": "standard_icon",
+            "token": "todo-outlined"
+          }
+        },
+        "elements": [
+          {
+            "tag": "markdown",
+            "content": "| 任务 | 负责人 | 预计完成 | 优先级 |\n|------|--------|----------|--------|\n| 情感分析模块开发 | 李四 | 01/25 | P0 |\n| 语音转文字集成 | 王五 | 01/26 | P1 |\n| 性能压测与优化 | 赵六 | 01/28 | P1 |\n| 管理后台 UI 开发 | 陈七 | 01/28 | P2 |"
+          }
+        ]
+      },
+      {
+        "tag": "collapsible_panel",
+        "expanded": true,
+        "header": {
+          "title": {
+            "tag": "plain_text",
+            "content": "风险与问题"
+          },
+          "icon": {
+            "tag": "standard_icon",
+            "token": "warning-outlined"
+          }
+        },
+        "elements": [
+          {
+            "tag": "div",
+            "fields": [
+              {
+                "is_short": false,
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**[P0] 高并发场景响应延迟**\n- 现象：1000 QPS 时响应时间 > 3s\n- 影响：可能影响上线时间\n- 措施：增加 Redis 缓存，优化数据库查询\n- 跟进人：张三"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "hr"
+          },
+          {
+            "tag": "div",
+            "fields": [
+              {
+                "is_short": false,
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**[P1] 第三方 NLP 服务偶发超时**\n- 现象：约 2% 请求超时\n- 影响：部分用户体验受损\n- 措施：增加本地降级方案\n- 跟进人：李四"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "markdown",
+        "content": "### 快速反馈"
+      },
+      {
+        "tag": "form",
+        "name": "weekly_feedback_form",
+        "elements": [
+          {
+            "tag": "column_set",
+            "flex_mode": "bisect",
+            "columns": [
+              {
+                "tag": "column",
+                "width": "weighted",
+                "weight": 1,
+                "elements": [
+                  {
+                    "tag": "select_static",
+                    "name": "progress_rating",
+                    "placeholder": {
+                      "tag": "plain_text",
+                      "content": "评价本周进度"
+                    },
+                    "options": [
+                      {
+                        "text": {
+                          "tag": "plain_text",
+                          "content": "非常满意"
+                        },
+                        "value": "5"
+                      },
+                      {
+                        "text": {
+                          "tag": "plain_text",
+                          "content": "满意"
+                        },
+                        "value": "4"
+                      },
+                      {
+                        "text": {
+                          "tag": "plain_text",
+                          "content": "一般"
+                        },
+                        "value": "3"
+                      },
+                      {
+                        "text": {
+                          "tag": "plain_text",
+                          "content": "需改进"
+                        },
+                        "value": "2"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "column",
+                "width": "weighted",
+                "weight": 1,
+                "elements": [
+                  {
+                    "tag": "multi_select_static",
+                    "name": "support_needed",
+                    "placeholder": {
+                      "tag": "plain_text",
+                      "content": "是否需要支援（可多选）"
+                    },
+                    "options": [
+                      {
+                        "text": {
+                          "tag": "plain_text",
+                          "content": "研发人力"
+                        },
+                        "value": "dev"
+                      },
+                      {
+                        "text": {
+                          "tag": "plain_text",
+                          "content": "测试人力"
+                        },
+                        "value": "qa"
+                      },
+                      {
+                        "text": {
+                          "tag": "plain_text",
+                          "content": "产品支持"
+                        },
+                        "value": "pm"
+                      },
+                      {
+                        "text": {
+                          "tag": "plain_text",
+                          "content": "暂不需要"
+                        },
+                        "value": "none"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "input",
+            "name": "additional_comments",
+            "placeholder": {
+              "tag": "plain_text",
+              "content": "补充意见（选填）..."
+            },
+            "max_length": 500,
+            "rows": 2
+          },
+          {
+            "tag": "button",
+            "text": {
+              "tag": "plain_text",
+              "content": "提交反馈"
+            },
+            "type": "primary",
+            "action_type": "form_submit",
+            "name": "submit_feedback"
+          },
+          {
+            "tag": "button",
+            "text": {
+              "tag": "plain_text",
+              "content": "清空"
+            },
+            "type": "default",
+            "action_type": "form_reset",
+            "name": "reset_feedback"
+          }
+        ]
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "column_set",
+        "flex_mode": "flow",
+        "columns": [
+          {
+            "tag": "column",
+            "width": "auto",
+            "elements": [
+              {
+                "tag": "button",
+                "text": {
+                  "tag": "plain_text",
+                  "content": "查看完整报告"
+                },
+                "type": "primary",
+                "behaviors": [
+                  {
+                    "type": "open_url",
+                    "default_url": "https://docs.feishu.cn/xxxxx"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "column",
+            "width": "auto",
+            "elements": [
+              {
+                "tag": "button",
+                "text": {
+                  "tag": "plain_text",
+                  "content": "项目看板"
+                },
+                "type": "default",
+                "behaviors": [
+                  {
+                    "type": "open_url",
+                    "default_url": "https://project.feishu.cn/xxxxx"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "column",
+            "width": "auto",
+            "elements": [
+              {
+                "tag": "button",
+                "text": {
+                  "tag": "plain_text",
+                  "content": "发起讨论"
+                },
+                "type": "default",
+                "behaviors": [
+                  {
+                    "type": "callback",
+                    "value": {
+                      "action": "start_discussion",
+                      "project_id": "smart_cs_v2",
+                      "week": "2024-W03"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "markdown",
+        "content": "<font color='grey'>由项目管理系统自动生成 | 更新时间：2024-01-21 09:00</font>",
+        "text_size": "notation"
+      }
+    ]
+  }
+}

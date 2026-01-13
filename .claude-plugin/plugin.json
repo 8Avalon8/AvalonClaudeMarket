@@ -5,5 +5,12 @@
   "author": {
     "name": "Avalon"
   },
-  "keywords": ["feishu", "lark", "card", "message-card", "飞书", "卡片"]
+  "keywords": ["feishu", "lark", "card", "message-card", "飞书", "卡片"],
+  "skills": [
+    {
+      "name": "feishu-card",
+      "description": "当用户需要构建飞书卡片、消息卡片 JSON 时使用 - 根据需求生成正确的飞书卡片 JSON 2.0 schema",
+      "entry": "../skills/feishu-card/SKILL.md"
+    }
+  ]
 }

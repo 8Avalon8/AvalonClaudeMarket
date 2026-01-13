@@ -1,4 +1,5 @@
 {
+  "schema": "2.0",
   "config": {
     "wide_screen_mode": true,
     "enable_forward": true
@@ -10,133 +11,131 @@
     },
     "template": "indigo"
   },
-  "elements": [
-    {
-      "tag": "column_set",
-      "flex_mode": "trisect",
-      "background_style": "default",
-      "columns": [
-        {
-          "tag": "column",
-          "width": "weighted",
-          "weight": 1,
-          "elements": [
-            {
-              "tag": "div",
-              "text": {
-                "tag": "lark_md",
-                "content": "**今日访问量**"
+  "body": {
+    "elements": [
+      {
+        "tag": "column_set",
+        "flex_mode": "trisect",
+        "background_style": "default",
+        "columns": [
+          {
+            "tag": "column",
+            "width": "weighted",
+            "weight": 1,
+            "elements": [
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**今日访问量**"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "12,345"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "较昨日 +15%"
+                }
               }
-            },
-            {
-              "tag": "div",
-              "text": {
-                "tag": "lark_md",
-                "content": "12,345"
-              }
-            },
-            {
-              "tag": "div",
-              "text": {
-                "tag": "lark_md",
-                "content": "较昨日 +15%"
-              }
-            }
-          ]
-        },
-        {
-          "tag": "column",
-          "width": "weighted",
-          "weight": 1,
-          "elements": [
-            {
-              "tag": "div",
-              "text": {
-                "tag": "lark_md",
-                "content": "**新增用户**"
-              }
-            },
-            {
-              "tag": "div",
-              "text": {
-                "tag": "lark_md",
-                "content": "1,234"
-              }
-            },
-            {
-              "tag": "div",
-              "text": {
-                "tag": "lark_md",
-                "content": "较昨日 +8%"
-              }
-            }
-          ]
-        },
-        {
-          "tag": "column",
-          "width": "weighted",
-          "weight": 1,
-          "elements": [
-            {
-              "tag": "div",
-              "text": {
-                "tag": "lark_md",
-                "content": "**活跃用户**"
-              }
-            },
-            {
-              "tag": "div",
-              "text": {
-                "tag": "lark_md",
-                "content": "5,678"
-              }
-            },
-            {
-              "tag": "div",
-              "text": {
-                "tag": "lark_md",
-                "content": "较昨日 +3%"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tag": "hr"
-    },
-    {
-      "tag": "div",
-      "text": {
-        "tag": "lark_md",
-        "content": "**今日热门功能 Top 3**\n1. 用户管理（2,345 次）\n2. 数据分析（1,234 次）\n3. 消息推送（987 次）"
-      }
-    },
-    {
-      "tag": "hr"
-    },
-    {
-      "tag": "action",
-      "actions": [
-        {
-          "tag": "button",
-          "text": {
-            "tag": "plain_text",
-            "content": "查看完整报告"
+            ]
           },
-          "type": "primary",
-          "url": "https://example.com/report"
+          {
+            "tag": "column",
+            "width": "weighted",
+            "weight": 1,
+            "elements": [
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**新增用户**"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "1,234"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "较昨日 +8%"
+                }
+              }
+            ]
+          },
+          {
+            "tag": "column",
+            "width": "weighted",
+            "weight": 1,
+            "elements": [
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "**活跃用户**"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "5,678"
+                }
+              },
+              {
+                "tag": "div",
+                "text": {
+                  "tag": "lark_md",
+                  "content": "较昨日 +3%"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "div",
+        "text": {
+          "tag": "lark_md",
+          "content": "**今日热门功能 Top 3**\n1. 用户管理（2,345 次）\n2. 数据分析（1,234 次）\n3. 消息推送（987 次）"
         }
-      ]
-    },
-    {
-      "tag": "note",
-      "elements": [
-        {
+      },
+      {
+        "tag": "hr"
+      },
+      {
+        "tag": "button",
+        "text": {
           "tag": "plain_text",
-          "content": "数据更新时间：2024-01-15 10:00"
-        }
-      ]
-    }
-  ]
+          "content": "查看完整报告"
+        },
+        "type": "primary",
+        "behaviors": [
+          {
+            "type": "open_url",
+            "default_url": "https://example.com/report"
+          }
+        ]
+      },
+      {
+        "tag": "markdown",
+        "content": "<font color='grey'>数据更新时间：2024-01-15 10:00</font>",
+        "text_size": "notation"
+      }
+    ]
+  }
 }
